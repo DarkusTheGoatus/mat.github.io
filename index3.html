@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style3.css">
+    <title>Some of our merchandise!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<header>
+</header>
+<body>
+<h1 class="title">Merchandise</h1>
+            <div class='merch-wrapper'>
+                <div id="cart-section">
+    <h2>Your Cart</h2>
+    <ul id="cart-items"></ul>
+    <p>Total: $<span id="cart-total">0</span></p>
+
+    <h3>Enter Payment Details</h3>
+    <form id="checkout-form">
+        <label for="cc-number">Credit Card Number:</label><br>
+        <input type="text" id="cc-number" placeholder="1234 5678 9012 3456" required><br><br>
+        <label for="cc-expiry">Expiry Date:</label><br>
+        <input type="text" id="cc-expiry" placeholder="MM/YY" required><br><br>
+        <label for="cc-cvv">CVV:</label><br>
+        <input type="text" id="cc-cvv" placeholder="123" required><br><br>
+        <button type="submit">Complete Purchase</button>
+    </form>
+    <p id="confirmation-message"></p>
+</div>
+
+                <div class='merch-item-merch1'>
+                    <div class='merch-item-top'></div>
+                    <div class='merch-item-bottom'>
+                        <h2 class='merch-item-name'>Shirt</h2>
+                        <p class='merch-item-descr'>A shirt with a weather logo</p>
+                        <img class="shirt-img" src="https://www.hairybaby.com/media/catalog/product/cache/926655770064c960c517bfa0a00e2468/h/b/hbkt-weather-like-eb-flat_4.jpeg">
+                        <div class='add-to-cart-group'>
+                            <div class="add-to-cart-group">
+                                <button class="decrease-btn">-</button>
+                                <span class="quantity">0</span>
+                                <button class="increase-btn">+</button>
+                                <span class="merch-item-price">30</span> $
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class='merch-item-merch2'>
+                    <div class='merch-item-top'></div>
+                    <div class='merch-item-bottom'>
+                        <h2 class='merch-item-name'>Hat</h2>
+                        <p class='merch-item-descr'>A silly hat</p>
+                        <img class="hat-img" src="data:image/jpeg;base64,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">
+                        <div class='add-to-cart-group'>
+                            <div class="add-to-cart-group">
+                                <button class="decrease-btn">-</button>
+                                <span class="quantity">0</span>
+                                <button class="increase-btn">+</button>
+                                <span class="merch-item-price">20</span> $
+                        </div> 
+                        </div>
+                    </div>
+                </div>
+                <div class='merch-item-merch3'>
+                    <div class='merch-item-top'></div>
+                    <div class='merch-item-bottom'>
+                        <h2 class='merch-item-name'>Poster</h2>
+                        <p class='merch-item-descr'>A nice wall decoration</p>
+                        <img class="poster-img" src="https://booklife.co.uk/cdn/shop/products/WeatherExplorers.png?v=1737722499">
+                        <div class='add-to-cart-group'>
+                            <div class="add-to-cart-group">
+                                <button class="decrease-btn">-</button>
+                                <span class="quantity">0</span>
+                                <button class="increase-btn">+</button>
+                                <span class="merch-item-price">15</span> $
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+                <div class='merch-item-merch4'>
+                    <div class='merch-item-top'></div>
+                    <div class='merch-item-bottom'>
+                        <h2 class='merch-item-name'>Plushie</h2>
+                        <p class='merch-item-descr'>A cute plushie</p>
+                        <img class="plushie-img" src="https://s.alicdn.com/@sc04/kf/He6fabfdef9164a0c9670c88309322fd15.png">
+                        <div class='add-to-cart-group'>
+                            <div class="add-to-cart-group">
+                                    <button class="decrease-btn">-</button>
+                                    <span class="quantity">0</span>
+                                    <button class="increase-btn">+</button>
+                                    <span class="merch-item-price">50</span> $
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+  <script>
+    const cart = {};
+    const cartItemsEl = document.getElementById('cart-items');
+    const cartTotalEl = document.getElementById('cart-total');
+    const confirmationMessage = document.getElementById('confirmation-message');
+
+    function updateCart() {
+        cartItemsEl.innerHTML = '';
+        let total = 0;
+
+        for (let [itemName, itemData] of Object.entries(cart)) {
+            if (itemData.quantity > 0) {
+                const li = document.createElement('li');
+                const itemTotal = itemData.price * itemData.quantity;
+                li.textContent = `${itemName} x${itemData.quantity} - $${itemTotal.toFixed(2)}`;
+                cartItemsEl.appendChild(li);
+                total += itemTotal;
+            }
+        }
+
+        cartTotalEl.innerText = total.toFixed(2);
+    }
+
+    document.querySelectorAll('.merch-item-bottom').forEach((itemSection) => {
+        const name = itemSection.querySelector('.merch-item-name').innerText;
+        const price = parseFloat(itemSection.querySelector('.merch-item-price').innerText);
+        const quantitySpan = itemSection.querySelector('.quantity');
+        const increaseBtn = itemSection.querySelector('.increase-btn');
+        const decreaseBtn = itemSection.querySelector('.decrease-btn');
+
+        cart[name] = {
+            quantity: 0,
+            price: price
+        };
+
+        increaseBtn.addEventListener('click', () => {
+            cart[name].quantity++;
+            quantitySpan.innerText = cart[name].quantity;
+            updateCart();
+        });
+
+        decreaseBtn.addEventListener('click', () => {
+            if (cart[name].quantity > 0) {
+                cart[name].quantity--;
+                quantitySpan.innerText = cart[name].quantity;
+                updateCart();
+            }
+        });
+    });
+
+    document.getElementById('checkout-form').addEventListener('submit', function (e) {
+        e.preventDefault();
+
+        const totalAmount = parseFloat(cartTotalEl.innerText);
+
+        if (totalAmount === 0) {
+            alert("Your cart is empty!");
+            return;
+        }
+
+        const ccNumber = document.getElementById('cc-number').value.trim();
+        const ccExpiry = document.getElementById('cc-expiry').value.trim();
+        const ccCVV = document.getElementById('cc-cvv').value.trim();
+
+        if (!ccNumber || !ccExpiry || !ccCVV) {
+            alert("Please fill in all payment fields.");
+            return;
+        }
+
+        confirmationMessage.innerText = "✅ Purchase complete! Thank you for your support.";
+
+        for (let itemName in cart) {
+            cart[itemName].quantity = 0;
+        }
+
+        document.querySelectorAll('.quantity').forEach(span => {
+            span.innerText = '0';
+        });
+
+        updateCart();
+        this.reset();
+    });
+</script>
+</body>
+<footer>
+    <h2 class="end-msg" >All purchases help us.If you want to help us this is the way to!</h2>
+</footer>
+</html>

@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #005792;
+    color: white;
+    padding: 20px 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-img {
+    width: 80px;
+    height: auto;
+}
+
+.top-icons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.about-us h1 {
+    font-size: 28px;
+    margin: 0;
+}
+
+.contact-info {
+    text-align: right;
+    font-size: 14px;
+}
+
+.contact-info a {
+    color: white;
+    text-decoration: underline;
+}
+
+.page {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 40px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.side-icons {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    flex: 1;
+    align-items: center;
+}
+
+.side-icons img {
+    width: 220px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.right-side {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.about-section {
+    background-color: #ffffff;
+    padding: 25px 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.05);
+}
+
+.about-section h2 {
+    margin-bottom: 15px;
+    color: #005792;
+    font-size: 22px;
+}
+
+.about-section p {
+    font-size: 16px;
+}
+
+footer {
+    background-color: #005792;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 60px;
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    .page {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .top-icons {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .contact-info {
+        text-align: center;
+        padding-top: 10px;
+        margin-right: 0;
+    }
+
+    .side-icons {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .side-icons img {
+        width: 150px;
+    }
+}

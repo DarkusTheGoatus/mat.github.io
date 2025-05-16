@@ -1,0 +1,19 @@
+.start div{
+    text-align: center;
+    background-color: purple;
+    padding: 15px;
+}
+
+.img-div{
+    text-align: center;
+}
+
+.name-div{
+    text-align: center;
+    background-color: purple;
+    padding: 15px;
+}
+
+.logo-img{
+    size:25%;
+}

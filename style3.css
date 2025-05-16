@@ -1,0 +1,174 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f6f8;
+    color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0077cc;
+    color: white;
+    padding: 20px 40px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+    margin: 0 auto;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.shirt-img,
+.hat-img,
+.poster-img,
+.plushie-img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.merch-wrapper {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 40px;
+}
+
+.merch-item-merch1,
+.merch-item-merch2,
+.merch-item-merch3,
+.merch-item-merch4 {
+    border: 2px solid #ddd;
+    border-radius: 12px;
+    padding: 20px;
+    background-color: white;
+    transition: transform 0.2s, box-shadow 0.2s;
+    width: 220px;
+    text-align: center;
+}
+
+.merch-item-merch1:hover,
+.merch-item-merch2:hover,
+.merch-item-merch3:hover,
+.merch-item-merch4:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.merch-item-name {
+    text-align: center;
+    justify-content: center;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.add-to-cart-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 15px;
+    background-color: #0077cc;
+    padding: 10px 15px;
+    border-radius: 25px;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.add-to-cart-group:hover {
+    background-color: #005fa3;
+}
+
+.increase-btn, 
+.decrease-btn {
+    padding: 6px 12px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.increase-btn:hover, 
+.decrease-btn:hover {
+    background-color: #0056b3;
+}
+
+.quantity {
+    font-weight: bold;
+    min-width: 20px;
+    text-align: center;
+}
+
+#cart-section {
+    margin: 40px auto;
+    max-width: 450px;
+    padding: 30px;
+    background: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+#cart-section h2, 
+#cart-section h3 {
+    margin-bottom: 15px;
+    text-align: center;
+    color: #005792;
+}
+
+#cart-items {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+/* Checkout form */
+#checkout-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+#checkout-form button {
+    background: #28a745;
+    color: white;
+    padding: 12px;
+    width: 100%;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+#checkout-form button:hover {
+    background: #218838;
+}
+
+#confirmation-message {
+    margin-top: 10px;
+    font-weight: bold;
+    color: green;
+    text-align: center;
+}
+
+.end-msg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 60px 0;
+    font-size: 18px;
+    color: #555;
+}
